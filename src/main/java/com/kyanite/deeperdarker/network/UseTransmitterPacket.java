@@ -23,7 +23,7 @@ public class UseTransmitterPacket {
         context.get().enqueueWork(() -> {
             ServerPlayer player = context.get().getSender();
             for (ItemStack stack : player.getInventory().items) {
-                if (stack.is(DDItems.SCULK_TRANSMITTER.get()) && SculkTransmitterItem.isLinked(stack)) {
+                if (stack.is(DDItems.SCULK_TRANSMITTER.get()) && SculkTransmitterItem.isLinked(stack, player.level())) {
                     SculkTransmitterItem.transmit(player.level(), player, stack, null);
                     break;
                 }

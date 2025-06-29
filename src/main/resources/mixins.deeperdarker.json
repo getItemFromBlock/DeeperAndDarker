@@ -6,6 +6,7 @@
   "refmap": "mixins.deeperdarker.refmap.json",
   "mixins": [
     "ContainerMenuMixin",
+    "ContainerOpenersCounterMixin",
     "HangingEntityItemMixin",
     "ItemStackMixin",
     "PaintingMixin",

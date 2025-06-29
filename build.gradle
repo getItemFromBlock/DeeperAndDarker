@@ -39,6 +39,7 @@ minecraft {
 
         client {
             property 'forge.enabledGameTestNamespaces', mod_id
+            args '--username=Dev' + Math.abs(new Random().nextInt(9999)).toString()
         }
 
         server {
